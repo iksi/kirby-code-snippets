@@ -50,3 +50,11 @@ c::set('timezone', 'CET');
 
 // set image compression
 c::set('thumbs.quality', 70);
+
+/*
+
+---------------------------------------
+Plugin Configuration
+---------------------------------------
+
+*/
