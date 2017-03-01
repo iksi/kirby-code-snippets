@@ -11,4 +11,4 @@
     <?php endif ?>
     <?php echo css('assets/css/dist/styles.min.css') ?>
   </head>
-<body>
+  <body>
