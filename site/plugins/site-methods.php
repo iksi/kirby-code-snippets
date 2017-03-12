@@ -11,7 +11,7 @@ site::$methods['fullTitle'] = function($site) {
   if ($page->isHomepage()) {
     $fullTitle = $siteTitle;
   } else {
-    $fullTitle = "$pageTitle — $siteTitle";
+    $fullTitle = "$pageTitle – $siteTitle";
   }
 
   return new Field($site, 'fullTitle', $fullTitle);
