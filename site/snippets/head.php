@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <title>
-      <?php echo $site->fullTitle()->html() ?>
+      <?php echo $site->windowTitle()->html() ?>
     </title>
     <?php if(!$page->isErrorPage() && !$page->description()->empty()): ?>
     <meta name="description" content="<?php echo $page->description() ?>">
