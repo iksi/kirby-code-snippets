@@ -1,18 +1,19 @@
 <?php
 
 /**
- * returns a Field object with the fullTitle for the in title bar
+ * Returns a Field object with the window title
  */
-site::$methods['fullTitle'] = function($site) {
+site::$methods['windowTitle'] = function($site) {
   $page = $site->page();
+
   $pageTitle = $page->title()->value();
   $siteTitle = $site->title()->value();
 
-  if ($page->isHomepage()) {
-    $fullTitle = $siteTitle;
+  if($page->isHomepage()) {
+    $windowTitle = $siteTitle;
   } else {
-    $fullTitle = "$pageTitle – $siteTitle";
+    $windowTitle = "{$pageTitle} - {$siteTitle}";
   }
 
-  return new Field($site, 'fullTitle', $fullTitle);
+  return new Field($site, 'windowTitle', $windowTitle);
 };
